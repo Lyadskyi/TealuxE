@@ -9,6 +9,10 @@ body {
 	color: var(--text-black);
 }
 
+blockquote {
+	margin: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -106,15 +110,18 @@ h3 {
 
 /* * ===== Section QUOTE 704x96px ===== * */
 
-.quote {
+.sectione-quote {
+	padding-top: 150px;
+}
+
+.blockquote__text {
 	font-family: var(--second-family);
 	max-width: 704px;
-	margin: 0 auto;
 	font-size: 40px;
 	font-style: italic;
-	font-weight: 300;
 	line-height: 1.2; /* 48/40 */
 	text-align: center;
+	margin: 0 auto;
 }
 
 /* * ===== Section COLLECTIONS 1200x355px ===== * */
