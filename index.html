@@ -15,53 +15,67 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<!-- * Header * -->
-
+		<!-- * ===== Header ===== * -->
 		<header class="header">
 			<div class="container">
 				<div class="header__box">
-					<img
-						class="header__logo"
-						src="images/icons/tealux-logo.svg"
-						alt="Logotype"
-					/>
-					<p class="logo">TealuxE</p>
-					<ul class="header__list">
-						<li class="header__item">
-							<a href="#" class="header__link">Black</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Green</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">White</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Oolong</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Pu-erh</a>
-						</li>
-					</ul>
-					<div class="header__user">
-						<ul class="user__list">
-							<li class="user__item">
-								<img src="images/icons/cart.svg" alt="" class="user__img" />
+					<a class="logo" href="#">
+						<img src="images/icons/header/tealuxe-logo.svg" alt="Logotype" />
+					</a>
+					<nav class="header-menu">
+						<ul class="header-menu__list">
+							<li class="header-menu__item">
+								<a href="#collections" class="header-menu__link">Black</a>
 							</li>
-							<li class="user__item">
-								<img src="images/icons/user.svg" alt="" class="user__img" />
+							<li class="header-menu__item">
+								<a href="#collections" class="header-menu__link">Green</a>
 							</li>
-							<li class="user__item">
-								<img src="images/icons/search.svg" alt="" class="user__img" />
+							<li class="header-menu__item">
+								<a href="#collections" class="header-menu__link">White</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="#collections" class="header-menu__link">Oolong</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="#collections" class="header-menu__link">Pu-erh</a>
 							</li>
 						</ul>
-					</div>
+					</nav>
+					<ul class="user-actions__list">
+						<li class="user-actions__item">
+							<a class="user-actions__link" href="#">
+								<img
+									class="user-actions__img"
+									src="images/icons/header/cart.svg"
+									alt="Cart"
+								/>
+							</a>
+						</li>
+						<li class="user-actions__item">
+							<a class="user-actions__link" href="#">
+								<img
+									class="user-actions__img"
+									src="images/icons/header/user.svg"
+									alt="User"
+								/>
+							</a>
+						</li>
+						<li class="user-actions__item user-actions__item-search">
+							<a class="user-actions__link" href="#">
+								<img
+									class="user-actions__img"
+									src="images/icons/header/search.svg"
+									alt="Search"
+								/>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</header>
 
 		<!-- * Section HERO * -->
-		<div class="section-hero section">
+		<section class="section-hero">
 			<div class="container">
 				<h1 class="hero__title">
 					A cup of tea is a moment of calm in the chaos of life
@@ -71,7 +85,87 @@
 					curated by tea experts.
 				</h3>
 			</div>
-		</div>
+		</section>
+
+		<!-- * Section QUOTE * -->
+		<section class="sectione-quote section">
+			<blockquote class="quote">
+				"Tea is not just a drink, it's a way of life and a way to connect with
+				our loved ones."
+			</blockquote>
+		</section>
+
+		<!-- * Section COLLECTIONS * -->
+		<section id="collections" class="section-collections section">
+			<div class="container">
+				<h2 class="collections__title section__title">
+					Explore our Collections
+				</h2>
+				<div class="collections__items">
+					<div class="collections__item">
+						<img src="images/jpg/collections/black.jpg" alt="Black Tea" />
+						<h3 class="collections__subtitle">Black</h3>
+					</div>
+					<div class="collections__item">
+						<img src="images/jpg/collections/green.jpg" alt="Green Tea" />
+						<h3 class="collections__subtitle">Green</h3>
+					</div>
+					<div class="collections__item">
+						<img src="images/jpg/collections/white.jpg" alt="White Tea" />
+						<h3 class="collections__subtitle">White</h3>
+					</div>
+					<div class="collections__item">
+						<img src="images/jpg/collections/oolong.jpg" alt="Oolong Tea" />
+						<h3 class="collections__subtitle">Oolong</h3>
+					</div>
+					<div class="collections__item">
+						<img src="images/jpg/collections/puerh.jpg" alt="Pu-erh Tea" />
+						<h3 class="collections__subtitle">Pu-erh</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- * Section REVIEWS * -->
+		<section class="section-reviews">
+			<div class="container">
+				<h2 class="reviews__title section__title">What our Clients say</h2>
+				<div class="reviews__items">
+					<div class="review__item">
+						<blockquote class="review__quote">
+							"As a tea enthusiast, I have tried teas from all over the world,
+							but this tea store truly stands out. Their teas are of the highest
+							quality and the variety is impressive. This is definitely a tea
+							store that every tea lover should visit."
+						</blockquote>
+						<cite class="review__author">Alice</cite>
+					</div>
+					<div class="review__item">
+						<blockquote class="review__quote">
+							"This tea store is my go-to for all my tea needs. Their selection
+							is unbeatable and the quality of their teas is exceptional."
+						</blockquote>
+						<cite class="review__author">Mad-Hatter</cite>
+					</div>
+					<div class="review__item">
+						<blockquote class="review__quote">
+							"If you're a tea lover, you must visit this tea store. The
+							selection is vast and the quality is outstanding. I guarantee you
+							won't be disappointed."
+						</blockquote>
+						<cite class="review__author">Dormouse</cite>
+					</div>
+					<div class="review__item">
+						<blockquote class="review__quote">
+							"I am not a big tea drinker, but this tea store has converted me.
+							I highly recommend this tea store to anyone looking for a
+							high-quality tea experience."
+						</blockquote>
+						<cite class="review__author">March Hare</cite>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<script src="js/main.js"></script>
 	</body>

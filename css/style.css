@@ -1,13 +1,12 @@
 /* * ===== GENERAL styles ===== * */
-
 body {
 	-webkit-font-smoothing: antialiased;
 	font-family: var(--font-family);
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.375;
-	color: var(--text-black);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.5;
 	background: var(--background-color);
+	color: var(--text-black);
 }
 
 h1,
@@ -17,9 +16,10 @@ h3 {
 }
 
 .container {
-	max-width: 1230px;
+	max-width: 1240px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .section {
@@ -28,65 +28,130 @@ h3 {
 
 .section__title {
 	font-size: 40px;
+	font-weight: 400;
+	line-height: 1.2; /* 48/40 */
+	text-align: center;
 	margin-bottom: 60px;
 }
 
-.logo {
-	font-family: var(--third-family);
-}
-
-/* * ===== Header ===== * */
-
-.header {
-}
-
+/* * ===== Header 1200x142px ===== * */
 .header__box {
-}
-
-.header__logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 142px;
+	padding: 30px 0 28px;
 }
 
 .logo {
+	margin-bottom: 37px;
 }
 
-.header__list {
+.header-menu__list {
+	display: flex;
+	gap: 65px;
+	font-size: 18px;
+	font-weight: 400;
+	margin-left: 75px;
 }
 
-.header__item {
+.user-actions__list {
+	display: flex;
+	gap: 0 20px;
+	height: 29px;
 }
 
-.header__link {
+.user-actions__item {
 }
 
-.header__user {
+.user-actions__item-search {
+	display: flex;
+	align-items: center;
+	margin-left: 80px;
 }
 
-.user__list {
-}
-
-.user__item {
-}
-
-.user__img {
-}
-
-/* * ===== Section HERO ===== * */
-
+/* * ===== Section HERO 1599x500px ===== * */
 .section-hero {
-	padding-top: 28px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40.1%, #000 97.4%);
+	background-image: url('../images/jpg/hero-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top;
+	min-height: 100vw;
+	padding-top: 0;
 }
 
 .hero__title {
 	max-width: 789px;
 	font-size: 60px;
-	line-height: 100%;
+	line-height: 1; /* 60/60 */
 	margin-bottom: 20px;
-	/* color: var(--text-white); */
+	color: var(--text-white);
 }
 
 .hero__subtitle {
 	font-size: 24px;
 	line-height: 1.2;
 	max-width: 558px;
-	/* color: var(--text-white); */
+	color: var(--text-white);
+}
+
+/* * ===== Section QUOTE 704x96px ===== * */
+.quote {
+	font-family: var(--second-family);
+	max-width: 704px;
+	margin: 0 auto;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 1.2; /* 48/40 */
+	text-align: center;
+}
+
+/* * ===== Section COLLECTIONS 1200x355px ===== * */
+.collections__items {
+	display: flex;
+	gap: 40px;
+}
+
+.collections__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.collections__subtitle {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.2084; /* 29/24 */
+}
+
+/* * ===== Section REVIEWS 1600x397px===== * */
+.section-reviews {
+	padding: 60px 0;
+	background: var(--background-section);
+}
+
+.reviews__title {
+}
+
+.reviews__items {
+	display: grid;
+	grid-template-columns: repeat(4, 280.5px);
+	gap: 26px;
+}
+
+.review__item {
+}
+
+.review__quote {
+	font-style: italic;
+	font-weight: 300;
+	margin: 0 0 10px 0;
+}
+
+.review__author {
+	font-weight: 600;
+	font-size: 20px;
 }
