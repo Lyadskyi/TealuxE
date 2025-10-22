@@ -173,3 +173,52 @@ h3 {
 	font-weight: 600;
 	font-size: 20px;
 }
+
+/* * ===== @ Media-rules @ ===== * */
+
+@media (max-width: 1000px) {
+	.section {
+		padding: 60px 0;
+	}
+
+	.header__inner {
+		min-height: auto;
+		padding: 30px 0;
+	}
+
+	.logo {
+		margin-bottom: 0;
+	}
+
+	.header-menu {
+		margin-right: auto;
+	}
+
+	.header-menu__list {
+		margin-left: 59px;
+	}
+	.user-actions__item-search {
+		margin-left: 30px;
+	}
+
+	.sectione-quote {
+		padding-top: 135px;
+	}
+}
+
+@media (max-width: 860px) {
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 640px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 360px) {
+}
