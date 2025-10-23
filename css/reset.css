@@ -22,8 +22,9 @@ body {
 button {
 	cursor: pointer;
 	border: none;
+	line-height: 0;
 	padding: 0;
-	background: none;
+	background-color: transparent;
 }
 
 ul,
@@ -49,7 +50,7 @@ picture,
 video,
 canvas,
 svg {
-	display: block;
+	/* display: block; */
 	max-width: 100%;
 	height: auto;
 }
