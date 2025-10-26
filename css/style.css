@@ -27,7 +27,7 @@ h3 {
 }
 
 .section {
-	padding: 75px 0;
+	margin: 150px 0;
 }
 
 .section__title {
@@ -151,10 +151,6 @@ h3 {
 
 /* * ===== Section QUOTE 704x96px ===== * */
 
-.sectione-quote {
-	padding-top: 150px;
-}
-
 .blockquote__text {
 	font-family: var(--second-family);
 	max-width: 704px;
@@ -189,31 +185,31 @@ h3 {
 /* * ===== Section REVIEWS 1600x397px===== * */
 
 .section-reviews {
+	background-color: var(--background-section);
 	padding: 60px 0;
-	background: var(--background-section);
 }
 
-.reviews__title {
+.reviews__list {
+	display: flex;
+	gap: 0 26px;
 }
 
-.reviews__items {
-	display: grid;
-	grid-template-columns: repeat(4, 280.5px);
-	gap: 26px;
+.reviews__item {
+	flex-basis: 280px;
 }
 
-.review__item {
-}
-
-.review__quote {
+.reviews__text {
+	font-size: 16px;
 	font-style: italic;
-	font-weight: 300;
-	margin: 0 0 10px 0;
+	line-height: 1.375; /* 22/16 */
+	margin-bottom: 10px;
 }
 
-.review__author {
+.reviews__author {
+	display: block;
+	font-style: normal;
 	font-weight: 600;
-	font-size: 20px;
+	line-height: 1.35; /* 27/20 */
 }
 
 /* * =============== @ Media-rules @ =============== * */
@@ -442,7 +438,7 @@ h3 {
 	}
 
 	.section__title {
-		margin-bottom: 0;
+		margin-bottom: 10px;
 	}
 
 	.user-actions__list {

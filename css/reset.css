@@ -64,3 +64,9 @@ select {
 	border: none;
 	outline: none;
 }
+
+blockquote,
+cite {
+	margin: 0;
+	padding: 0;
+}
