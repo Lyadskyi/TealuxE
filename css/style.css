@@ -1,4 +1,4 @@
-/* * ===== GENERAL styles ===== * */
+/* =+=+=+=+=+ GENERAL styles =+=+=+=+=+ */
 body {
 	-webkit-font-smoothing: antialiased;
 	font-family: var(--font-family);
@@ -38,7 +38,7 @@ h3 {
 	margin-bottom: 60px;
 }
 
-/* * ===== Header 1200x142px ===== * */
+/* ===== Header 1200x142px ===== */
 
 .header__inner {
 	display: flex;
@@ -114,7 +114,7 @@ h3 {
 	margin-left: 80px;
 }
 
-/* * ===== Section HERO 1599x500px ===== * */
+/* ===== Section HERO 1599x500px ===== */
 
 .section-hero {
 	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 40.1%, #000 97.4%),
@@ -149,7 +149,7 @@ h3 {
 	margin-bottom: 48px;
 }
 
-/* * ===== Section QUOTE 704x96px ===== * */
+/* ===== Section QUOTE 704x96px ===== */
 
 .blockquote__text {
 	font-family: var(--second-family);
@@ -161,7 +161,7 @@ h3 {
 	margin: 0 auto;
 }
 
-/* * ===== Section COLLECTIONS 1200x355px ===== * */
+/* ===== Section COLLECTIONS 1200x355px ===== */
 
 .collections__list {
 	display: flex;
@@ -182,7 +182,7 @@ h3 {
 	line-height: 1.2084; /* 29/24 */
 }
 
-/* * ===== Section REVIEWS 1600x397px===== * */
+/* ===== Section REVIEWS 1600x397px===== */
 
 .section-reviews {
 	background-color: var(--background-section);
@@ -191,6 +191,7 @@ h3 {
 
 .reviews__list {
 	display: flex;
+	justify-content: center;
 	gap: 0 26px;
 }
 
@@ -212,15 +213,11 @@ h3 {
 	line-height: 1.35; /* 27/20 */
 }
 
-/* * =============== @ Media-rules @ =============== * */
+/* =============== @ Media-rules @ =============== */
 
 @media (max-width: 1000px) {
 	.section {
-		padding: 60px 0;
-	}
-
-	.section__title {
-		margin-bottom: 30px;
+		margin: 120px 0;
 	}
 
 	.header__inner {
@@ -243,16 +240,17 @@ h3 {
 	.user-actions__item-search {
 		margin-left: 30px;
 	}
-
-	.sectione-quote {
-		padding-top: 120px;
-		padding-bottom: 75px;
+	/* ===== Section COLLECTIONS 960x325px ===== */
+	.collections__title {
+		margin-bottom: 30px;
 	}
-
-	/* * ===== Section COLLECTIONS 960x325px ===== * */
 
 	.collections__list {
 		gap: 0;
+	}
+	/* ===== Section REVIEWS 1000x397px ===== */
+	.reviews__item:last-child {
+		display: none;
 	}
 }
 
@@ -314,7 +312,7 @@ h3 {
 		border-top: 2px solid #f7f2ea;
 	}
 
-	.mobile-menu__item:not(:last-child) {
+	.mobile-menu__item:last-child {
 		margin-bottom: 35px;
 	}
 
@@ -334,10 +332,6 @@ h3 {
 }
 
 @media (max-width: 768px) {
-	.section__title {
-		margin-bottom: 40px;
-	}
-
 	.header__inner {
 		margin-left: 64px;
 		margin-right: 64px;
@@ -346,12 +340,27 @@ h3 {
 	.blockquote__text {
 		max-width: 640px;
 	}
-
-	/* * ===== Section COLLECTIONS 636x582px ===== * */
+	/* ===== Section COLLECTIONS 636x582px ===== */
+	.collections__title {
+		margin-bottom: 40px;
+	}
 
 	.collections__list {
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+	/* ===== Section REVIEWS 768x596px ===== */
+	.section-reviews {
+		padding-bottom: 82px;
+	}
+
+	.reviews__list {
+		flex-wrap: wrap;
+		gap: 30px 76px;
+	}
+
+	.reviews__item:last-child {
+		display: block;
 	}
 }
 
@@ -361,9 +370,9 @@ h3 {
 		padding-right: 10px;
 	}
 
-	.section {
+	/* .section {
 		padding: 30px 0;
-	}
+	} */
 
 	.header__inner {
 		margin-left: 0;
@@ -424,23 +433,25 @@ h3 {
 		font-weight: 300;
 		line-height: 1.375; /* 22/16 */
 	}
+	/* ===== Section COLLECTIONS 416x819px ===== */
+	.reviews__title {
+		margin-bottom: 50px;
+	}
+	/* ===== Section REVIEWS 480x588px ===== */
+	.section-reviews {
+		padding: 50px 0;
+	}
 
-	/* * ===== Section COLLECTIONS 416x819px ===== * */
+	.reviews__list {
+		gap: 30px 20px;
+	}
+
+	.reviews__item {
+		flex-basis: 220px;
+	}
 }
 
 @media (max-width: 360px) {
-	.section {
-		padding: 25px 0;
-	}
-
-	.section-collections {
-		padding: 40px 0;
-	}
-
-	.section__title {
-		margin-bottom: 10px;
-	}
-
 	.user-actions__list {
 		height: 22px;
 	}
@@ -475,11 +486,14 @@ h3 {
 	.blockquote__text {
 		max-width: 340px;
 	}
-
-	/* * ===== Section COLLECTIONS 386x770px ===== * */
+	/* ===== Section COLLECTIONS 386x770px ===== */
+	.section-collections {
+		padding: 40px 0;
+	}
 
 	.collections__title {
 		font-size: 24px;
+		margin-bottom: 10px;
 	}
 
 	.collections__img {
@@ -488,5 +502,21 @@ h3 {
 
 	.collections__subtitle {
 		font-size: 20px;
+	}
+	/* ===== Section REVIEWS 356x461px ===== */
+	.reviews__title {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 1.2085; /* 29/24 */
+		margin-bottom: 30px;
+	}
+
+	.reviews__item {
+		flex-basis: 100%;
+	}
+
+	.reviews__item:nth-child(2),
+	.reviews__item:nth-child(3) {
+		display: none;
 	}
 }
