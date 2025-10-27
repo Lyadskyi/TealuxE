@@ -213,6 +213,70 @@ h3 {
 	line-height: 1.35; /* 27/20 */
 }
 
+/* ===== Section BLOG 1142x619px===== */
+
+.section-main-blog {
+}
+
+.main-blog__title {
+}
+
+.main-blog__list {
+}
+
+.main-blog__item {
+}
+
+.main-blog__item-img {
+}
+
+.main-blog__item-content {
+}
+
+.main-blog__item-title {
+}
+
+.main-blog__item-author {
+}
+
+.main-blog__item-link {
+}
+
+.main-blog__link {
+}
+
+/* ===== Section MAILING LIST 1600x418px===== */
+
+.section-mailing-list {
+}
+
+.mailing-list__title {
+}
+
+.mailing-list__inner {
+}
+
+.mailing-list__text {
+}
+
+.mailing-list__form {
+}
+
+.mailing-list__email {
+}
+
+.mailing-list__btn {
+}
+
+.checkbox {
+}
+
+.checkbox-style {
+}
+
+.checkbox__text {
+}
+
 /* =============== @ Media-rules @ =============== */
 
 @media (max-width: 1000px) {
