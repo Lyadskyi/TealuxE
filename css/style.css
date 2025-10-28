@@ -313,8 +313,8 @@ h3 {
 	line-height: 1.5;
 	margin-right: 25px;
 	padding: 3px 15px;
-	background-color: transparent;
 	border-bottom: 1px solid #b8b58b;
+	background-color: transparent;
 	color: var(--text-input);
 }
 
@@ -362,8 +362,8 @@ h3 {
 
 .checkbox__text {
 	font-size: 13px;
-	padding-left: 20px;
 	line-height: 1.3847; /* 18/13 */
+	padding-left: 20px;
 }
 
 .checkbox:checked + .checkbox-style::before {
@@ -376,27 +376,33 @@ h3 {
 	background-color: #b8b58b;
 }
 
-/* ===== Section PRIORITISE 1199x286px===== */
-
-.section-prioritise {
-}
-
-.prioritise__title {
-}
+/* ===== Section PRIORITISE 1200x286px===== */
 
 .prioritise__list {
-}
-
-.prioritise__item {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	gap: 30px 49px;
 }
 
 .prioritise__item-title {
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1.3667; /* 41/30 */
+	margin-bottom: 10px;
 }
 
 .prioritise__item-text {
+	font-weight: 600;
+	line-height: 1.35; /* 27/20 */
+	margin-bottom: 40px;
 }
 
 .prioritise__item-img {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
 }
 
 /* =============== @ Media-rules @ =============== */
