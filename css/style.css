@@ -277,33 +277,103 @@ h3 {
 /* ===== Section MAILING LIST 1600x418px===== */
 
 .section-mailing-list {
+	padding: 100px 0;
+	background-color: var(--background-section);
+	background-image: url(../images/icons/mailing/mailing-bg.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
 }
 
 .mailing-list__title {
+	text-align: start;
+	margin-bottom: 50px;
 }
 
 .mailing-list__inner {
+	display: flex;
+	gap: 60px 40px;
 }
 
 .mailing-list__text {
+	flex-basis: 580px;
 }
 
 .mailing-list__form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 580px;
 }
 
 .mailing-list__email {
+	font-family: var(--font-family);
+	width: 439px;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-right: 25px;
+	padding: 3px 15px;
+	background-color: transparent;
+	border-bottom: 1px solid #b8b58b;
+	color: var(--text-input);
+}
+
+.mailing-list__email::placeholder {
+	font-family: var(--font-family);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #b8b58b;
 }
 
 .mailing-list__btn {
+	font-family: var(--font-family);
+	font-weight: 300;
+	font-size: 20px;
+	padding: 12px 41px;
+	width: 116px;
+	height: 51px;
+	border: 1px solid #151618;
+	background-color: #fff;
+}
+
+.mailing-list__label {
+	margin-top: 12px;
 }
 
 .checkbox {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding-left: 20px;
+	clear: rect(0, 0, 0, 0);
+	overflow: hidden;
 }
 
 .checkbox-style {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	margin-top: 4px;
+	border: 1px solid #151618;
+	background-color: #fff;
 }
 
 .checkbox__text {
+	font-size: 13px;
+	padding-left: 20px;
+	line-height: 1.3847; /* 18/13 */
+}
+
+.checkbox:checked + .checkbox-style::before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	background-color: #b8b58b;
 }
 
 /* ===== Section PRIORITISE 1199x286px===== */
@@ -423,8 +493,8 @@ h3 {
 	}
 
 	.mobile-menu {
-		padding-top: 60px;
 		margin: 60px 30px;
+		padding-top: 60px;
 		border-top: 2px solid #f7f2ea;
 	}
 
