@@ -1,4 +1,5 @@
 /* =+=+=+=+=+ GENERAL styles =+=+=+=+=+ */
+
 body {
 	-webkit-font-smoothing: antialiased;
 	font-family: var(--font-family);
@@ -39,7 +40,6 @@ h3 {
 }
 
 /* ===== Header 1200x142px ===== */
-
 .header__inner {
 	display: flex;
 	justify-content: space-between;
@@ -114,8 +114,7 @@ h3 {
 	margin-left: 80px;
 }
 
-/* ===== Section HERO 1599x500px ===== */
-
+/* ===== Section HERO 1600x500px ===== */
 .section-hero {
 	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 40.1%, #000 97.4%),
 		url('../images/jpg/hero-bg.jpg');
@@ -150,7 +149,6 @@ h3 {
 }
 
 /* ===== Section QUOTE 704x96px ===== */
-
 .blockquote__text {
 	font-family: var(--second-family);
 	max-width: 704px;
@@ -162,7 +160,6 @@ h3 {
 }
 
 /* ===== Section COLLECTIONS 1200x355px ===== */
-
 .collections__list {
 	display: flex;
 	text-align: center;
@@ -183,7 +180,6 @@ h3 {
 }
 
 /* ===== Section REVIEWS 1600x397px===== */
-
 .section-reviews {
 	background-color: var(--background-section);
 	padding: 60px 0;
@@ -214,7 +210,6 @@ h3 {
 }
 
 /* ===== Section BLOG 1142x619px===== */
-
 .main-blog__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -275,7 +270,6 @@ h3 {
 }
 
 /* ===== Section MAILING LIST 1600x418px===== */
-
 .section-mailing-list {
 	padding: 100px 0;
 	background-color: var(--background-section);
@@ -377,7 +371,6 @@ h3 {
 }
 
 /* ===== Section PRIORITISE 1200x286px===== */
-
 .prioritise__list {
 	display: flex;
 	justify-content: center;
@@ -405,6 +398,21 @@ h3 {
 	margin: 0 auto;
 }
 
+/* ===== Section FOOTER 1600x593px===== */
+.footer {
+	min-height: 593px;
+	background-color: var(--background-section);
+}
+
+.footer__bottom {
+	margin-bottom: 20px;
+}
+
+.footer-payments__list {
+	display: flex;
+	gap: 20px;
+}
+
 /* =============== @ Media-rules @ =============== */
 
 @media (max-width: 1000px) {
@@ -412,6 +420,7 @@ h3 {
 		margin: 120px 0;
 	}
 
+	/* ===== Header 960x105px ===== */
 	.header__inner {
 		min-height: auto;
 		padding: 30px 0;
@@ -432,7 +441,8 @@ h3 {
 	.user-actions__item-search {
 		margin-left: 30px;
 	}
-	/* ===== Section COLLECTIONS 960x325px ===== */
+
+	/* ===== Section COLLECTIONS 960x231px ===== */
 	.collections__title {
 		margin-bottom: 30px;
 	}
@@ -444,6 +454,47 @@ h3 {
 	.reviews__item:last-child {
 		display: none;
 	}
+
+	/* ===== Section BLOG 940x592px ===== */
+	.main-blog__list {
+		gap: 67px 20px;
+	}
+
+	.main-blog__item {
+		flex-basis: 460px;
+	}
+
+	.main-blog__item-img {
+		max-width: 230px;
+	}
+
+	/* ===== Section MAILING LIST 1000x495px ===== */
+	.section-mailing-list {
+		padding: 60px 0;
+	}
+
+	.mailing-list__title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	.mailing-list__inner {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.mailing-list__text {
+		text-align: center;
+		flex-basis: 780px;
+	}
+
+	/* ===== Section PRIORITISE 757x494px ===== */
+
+	.prioritise__list {
+		gap: 30px 210px;
+	}
+
+	/* ===== FOOTER 1000x540px ===== */
 }
 
 @media (max-width: 860px) {
