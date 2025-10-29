@@ -690,6 +690,10 @@ h3 {
 }
 
 @media (max-width: 480px) {
+	.section {
+		margin: 60px 0;
+	}
+
 	.section__title {
 		margin-bottom: 30px;
 	}
@@ -705,6 +709,7 @@ h3 {
 
 	.logo img {
 		width: 39px;
+		height: 56px;
 	}
 
 	.header-menu__list {
@@ -723,6 +728,11 @@ h3 {
 	}
 
 	/* ===== Section QUOTE 376x44px ===== */
+	.sectione-quote {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
 	.blockquote__text {
 		max-width: 376px;
 		font-size: 16px;
@@ -731,13 +741,14 @@ h3 {
 	}
 
 	/* ===== Section COLLECTIONS 416x819px ===== */
-	.reviews__title {
-		margin-bottom: 50px;
-	}
 
 	/* ===== Section REVIEWS 480x588px ===== */
 	.section-reviews {
 		padding: 50px 0;
+	}
+
+	.reviews__title {
+		margin-bottom: 50px;
 	}
 
 	.reviews__list {
@@ -748,11 +759,47 @@ h3 {
 		flex-basis: 220px;
 	}
 
-	/* ===== Section BLOG 460x921px===== */
+	/* ===== Section BLOG 460x922px===== */
+	.main-blog__title {
+		margin-bottom: 60px;
+	}
 
-	/* ===== Section MAILING LIST 480x416px===== */
+	.main-blog__item-img {
+		max-width: 230px;
+	}
 
-	/* ===== Section PRIORITISE 294x926px===== */
+	/* ===== Section MAILING LIST 480x415px===== */
+	.section-mailing-list {
+		padding: 50px 0;
+	}
+
+	.mailing-list__inner {
+		gap: 30px 0;
+	}
+
+	.mailing-list__text {
+		flex-basis: 100%;
+		font-size: 13px;
+		line-height: 1.3847; /* 18/13 */
+	}
+
+	.mailing-list__email {
+		width: 324px;
+		margin-right: 20px;
+	}
+
+	.mailing-list__btn {
+		height: 51px;
+	}
+
+	.mailing-list__label {
+		margin-top: 12px;
+	}
+
+	/* ===== Section PRIORITISE 294x940px===== */
+	.prioritise__list {
+		row-gap: 50px;
+	}
 
 	/* ===== Footer 480x855px ===== */
 }
