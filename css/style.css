@@ -805,10 +805,16 @@ h3 {
 }
 
 @media (max-width: 360px) {
+	/* ===== Header 340x56px ===== */
+	.section {
+		margin: 50px 0;
+	}
+
 	.user-actions__list {
 		height: 22px;
 	}
 
+	/* ===== Section HERO 360x367px ===== */
 	.hero__inner {
 		min-height: 367px;
 	}
@@ -831,6 +837,7 @@ h3 {
 		margin-left: 0;
 	}
 
+	/* ===== Section QUOTE 340x44px ===== */
 	.sectione-quote {
 		padding-top: 70px;
 		padding-bottom: 40px;
@@ -839,23 +846,22 @@ h3 {
 	.blockquote__text {
 		max-width: 340px;
 	}
-	/* ===== Section COLLECTIONS 386x770px ===== */
+
+	/* ===== Section COLLECTIONS 360x736px ===== */
 	.section-collections {
 		padding: 40px 0;
 	}
 
 	.collections__title {
 		font-size: 24px;
-		margin-bottom: 10px;
+		line-height: 1.2084; /* 29/24 */
+		margin-bottom: 0;
 	}
 
 	.collections__img {
 		max-width: 170px;
 	}
 
-	.collections__subtitle {
-		font-size: 20px;
-	}
 	/* ===== Section REVIEWS 356x461px ===== */
 	.reviews__title {
 		font-size: 24px;
@@ -872,4 +878,77 @@ h3 {
 	.reviews__item:nth-child(3) {
 		display: none;
 	}
+
+	/* ===== Section BLOG 270x795px===== */
+	.main-blog__title {
+		font-size: 24px;
+		line-height: 1.2084; /* 29/24 */
+		margin-bottom: 30px;
+	}
+
+	.main-blog__list {
+		justify-content: center;
+	}
+
+	.main-blog__item {
+		display: block;
+		max-width: 270px;
+	}
+
+	.main-blog__item:nth-child(even) {
+		display: none;
+	}
+
+	.main-blog__item-img {
+		max-width: 100%;
+	}
+
+	.main-blog__item-title {
+		line-height: 1.1948;
+		min-height: auto;
+		margin: 10px 0 5px;
+	}
+
+	.main-blog__item-author {
+		margin-bottom: 10px;
+	}
+
+	.main-blog__link {
+		margin: 30px auto 0;
+	}
+
+	/* ===== Section MAILING LIST 360x432px===== */
+	.mailing-list__title {
+		font-size: 24px;
+		line-height: 1.2084; /* 29/24 */
+	}
+
+	.mailing-list__email {
+		width: 205px;
+		margin-right: 19px;
+	}
+
+	/* ===== Section PRIORITISE 340x713px===== */
+	.prioritise__title {
+		font-size: 24px;
+		line-height: 1.2084; /* 29/24 */
+	}
+
+	.prioritise__list {
+		gap: 40px;
+	}
+
+	.prioritise__item-title {
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+	.prioritise__item-text {
+		font-size: 10px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	/* ===== Footer 360x897px ===== */
 }
