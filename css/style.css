@@ -398,19 +398,41 @@ h3 {
 	margin: 0 auto;
 }
 
-/* ===== Section Footer 1600x593px===== */
+/* ===== Footer 1600x593px===== */
 .footer {
 	min-height: 593px;
 	background-color: var(--background-section);
 }
 
 .footer__bottom {
+	display: flex;
 	margin-bottom: 20px;
 }
 
 .footer-payments__list {
 	display: flex;
 	gap: 20px;
+}
+
+.footer__top {
+}
+
+.footer__copyright {
+	font-size: 16px;
+	line-height: 1.375; /* 22/16 */
+	margin-right: 192px;
+}
+
+.footer-payments__list {
+}
+
+.footer-payments__item {
+}
+
+.footer-payments__link {
+}
+
+.footer-payments__img {
 }
 
 /* =============== @ Media-rules @ =============== */
