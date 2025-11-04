@@ -405,17 +405,93 @@ h3 {
 	background-color: var(--background-section);
 }
 
+.footer__top {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0 40px;
+	margin-bottom: 100px;
+}
+
+.footer-products__list {
+}
+
+.footer-products__title {
+}
+
+.footer-products__item {
+}
+
+.footer-products__link {
+}
+
+.footer-company__list {
+}
+
+.footer-company__title {
+}
+
+.footer-company__item {
+}
+
+.footer-company__link {
+}
+
+.footer__blockquote {
+}
+
+.footer__blockquote-text {
+}
+
+.footer__blockquote-author {
+}
+
+.footer__contacts {
+}
+
+.footer__contacts-title {
+}
+
+.footer__contacts-text {
+}
+
+.footer__nav {
+}
+
+.footer__nav-logo {
+}
+
+.footer__nav-link {
+}
+
+.footer__nav-img {
+}
+
+.footer__nav-contacts {
+}
+
+.footer__nav-phone {
+}
+
+.footer__nav-email {
+}
+
+.footer__social {
+}
+
+.footer__social-list {
+}
+
+.footer__social-item {
+}
+
+.footer__social-link {
+}
+
+.footer__social-img {
+}
+
 .footer__bottom {
 	display: flex;
-}
-
-.footer-payments__list {
-	display: flex;
-	gap: 20px;
-}
-
-.footer__top {
-	/* display: flex; */
 }
 
 .footer__copyright {
@@ -425,12 +501,12 @@ h3 {
 }
 
 .footer-payments__list {
+	display: flex;
+	align-items: center;
+	gap: 0 20px;
 }
 
 .footer-payments__item {
-}
-
-.footer-payments__link {
 }
 
 .footer-payments__img {
