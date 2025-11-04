@@ -401,12 +401,12 @@ h3 {
 /* ===== Footer 1600x593px===== */
 .footer {
 	min-height: 593px;
+	padding: 100px 0 18px;
 	background-color: var(--background-section);
 }
 
 .footer__bottom {
 	display: flex;
-	margin-bottom: 20px;
 }
 
 .footer-payments__list {
@@ -415,6 +415,7 @@ h3 {
 }
 
 .footer__top {
+	/* display: flex; */
 }
 
 .footer__copyright {
