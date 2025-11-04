@@ -443,9 +443,6 @@ h3 {
 	display: block;
 }
 
-.footer__contacts {
-}
-
 .footer__contacts-text {
 	font-size: 13px;
 	margin-bottom: 20px;
@@ -459,15 +456,6 @@ h3 {
 
 .footer__nav-logo {
 	margin-right: 40px;
-}
-
-.footer__nav-link {
-}
-
-.footer__nav-img {
-}
-
-.footer__nav-contacts {
 }
 
 .footer__nav-phone,
@@ -498,18 +486,13 @@ h3 {
 
 .footer__social {
 	margin-top: 39px;
+	margin-left: 97px;
 }
 
 .footer__social-list {
-}
-
-.footer__social-item {
-}
-
-.footer__social-link {
-}
-
-.footer__social-img {
+	display: flex;
+	align-items: center;
+	gap: 0 20px;
 }
 
 .footer__bottom {
@@ -526,12 +509,6 @@ h3 {
 	display: flex;
 	align-items: center;
 	gap: 0 20px;
-}
-
-.footer-payments__item {
-}
-
-.footer-payments__img {
 }
 
 /* =============== @ Media-rules @ =============== */
