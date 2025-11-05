@@ -592,6 +592,22 @@ h3 {
 	}
 
 	/* ===== Footer 1000x540px ===== */
+
+	.footer__top {
+		margin-bottom: 55px;
+	}
+
+	.footer__blockquote {
+		width: 270px;
+	}
+
+	.footer__blockquote-text {
+		margin-top: 0;
+	}
+
+	.footer__copyright {
+		margin-right: 40px;
+	}
 }
 
 @media (max-width: 860px) {
