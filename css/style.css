@@ -605,6 +605,11 @@ h3 {
 		margin-top: 0;
 	}
 
+	.footer__nav-logo{
+		margin-right: 35px;
+
+	}
+
 	.footer__copyright {
 		margin-right: 40px;
 	}
