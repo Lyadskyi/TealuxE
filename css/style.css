@@ -422,9 +422,13 @@ h3 {
 	margin-bottom: 50px;
 }
 
+.footer-products__item,
+.footer-company__item {
+	font-size: 16px;
+}
+
 .footer-products__item:not(:last-child),
 .footer-company__item:not(:last-child) {
-	font-size: 16px;
 	margin-bottom: 20px;
 }
 
@@ -598,16 +602,15 @@ h3 {
 	}
 
 	.footer__blockquote {
-		width: 270px;
+		width: 269px;
 	}
 
 	.footer__blockquote-text {
 		margin-top: 0;
 	}
 
-	.footer__nav-logo{
+	.footer__nav-logo {
 		margin-right: 35px;
-
 	}
 
 	.footer__copyright {
