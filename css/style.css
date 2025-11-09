@@ -704,11 +704,17 @@ h3 {
 }
 
 @media (max-width: 768px) {
-	/* ===== Header 640x105px ===== */
-	.header__inner {
-		margin-left: 64px;
-		margin-right: 64px;
+	.container {
+		padding-left: 64px;
+		padding-right: 64px;
 	}
+
+	.container-tab {
+		padding-left: 19px;
+		padding-right: 19px;
+	}
+
+	/* ===== Header 640x105px ===== */
 
 	/* ===== Section HERO 768x500px ===== */
 	.hero__title {
@@ -721,10 +727,11 @@ h3 {
 	}
 
 	.blockquote__text {
+		line-height: 1.2; /* 48/40 */
 		max-width: 640px;
 	}
 
-	/* ===== Section COLLECTIONS 636x582px ===== */
+	/* ===== Section COLLECTIONS 640x582px ===== */
 	.collections__title {
 		margin-bottom: 40px;
 	}
@@ -776,10 +783,38 @@ h3 {
 
 	/* ===== Section PRIORITISE 638x494px===== */
 	.prioritise__list {
-		gap: 30px 133px;
+		gap: 30px 89px;
 	}
 
 	/* ===== Footer 768x632px ===== */
+	.footer {
+		padding-top: 50px;
+	}
+
+	.footer__top {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 46px;
+		margin-bottom: 20px;
+	}
+
+	.footer-products__list,
+	.footer-company__list {
+		grid-row: span 3;
+	}
+
+	.footer__blockquote-author {
+		line-height: 0.9175;
+	}
+
+	.footer__contacts {
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
+		width: 270px;
+	}
+
+	.footer__social {
+		margin-top: 19px;
+	}
 }
 
 @media (max-width: 680px) {
