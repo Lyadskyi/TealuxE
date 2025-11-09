@@ -465,7 +465,7 @@ h3 {
 	margin-right: 40px;
 }
 
-.footer__nav-contacts{
+.footer__nav-contacts {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -606,28 +606,22 @@ h3 {
 
 	/* ===== Footer 1000x540px ===== */
 
-	.footer{
+	.footer {
 		padding-bottom: 10px;
 	}
 
 	.footer__top {
+		grid-template-columns: 97px 155px 269px 270px;
+		gap: 56px;
 		margin-bottom: 55px;
-	}
-
-	.footer__blockquote {
-		width: 269px;
 	}
 
 	.footer__blockquote-text {
 		margin-top: 0;
 	}
 
-	.footer__nav-logo {
-		margin-right: 35px;
-	}
-
 	.footer__copyright {
-		margin-right: 40px;
+		margin-right: 38px;
 	}
 }
 
